@@ -1,0 +1,30 @@
+name: Multi-Job Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  Job-A:
+    runs-on: ubuntu-latest
+    steps:
+      - name: A - Step 1
+        run: echo "This is Job A - Step 1"
+      - name: A - Step 2
+        run: echo "This is Job A - Step 2"
+
+  Job-B:
+    runs-on: ubuntu-latest
+    steps:
+      - name: B - Step 1
+        run: echo "This is Job B - Step 1"
+      - name: B - Step 2
+        run: echo "This is Job B - Step 2"
+
+  Job-C:
+    runs-on: ubuntu-latest
+    steps:
+      - name: C - Step 1
+        run: echo "This is Job C - Step 1"
+      - name: C - Step 2
+        run: echo "This is Job C - Step 2"
