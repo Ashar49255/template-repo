@@ -27,4 +27,4 @@ jobs:
       - name: C - Step 1
         run: echo "This is Job C - Step 1"
       - name: C - Step 2
-        run: echo "This is my Job C - Step 2"
+        run: echo "This is Job C - Step 2"
